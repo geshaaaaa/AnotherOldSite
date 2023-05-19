@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="addtocart.css">
+        <script src="https://kit.fontawesome.com/6ac2ccb808.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo-items">
+                <img src="img/Zoro.png" alt="">
+                <p class="logo">GeekFam</p>
+            </div>
+
+            <div class="search-cart">
+                <div class="searchBar">
+                    <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                    <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                </div>
+                <div class="cart"><button id="modal-btn"><i class="fa-solid fa-cart-shopping"></i>
+                    <p id="count">0</p></button>
+                </div>
+            </div>
+            
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Оплата</h2>
+                  <p>Сумма до сплати: <u id="total-price">0</u>₴</p>
+                </div>
+              </div>
+        </div>
+
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">₴ 0.00</h2>
+                </div>
+            </div>
+        </div>
+
+        <script src="addtocart.js"></script>
+    </body>
+</html>
